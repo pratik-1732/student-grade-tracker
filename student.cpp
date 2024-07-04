@@ -15,22 +15,16 @@ public:
     student(string fullName, string id) : fullName(fullName), id(id), marksObtained(0), totalMarks(0), percent(0.00) {}
 
     // adding marks for subject
-    void addSubjectMarks(string subject, int marks, int total)
+    void addSubjectMarks(string &subject, int marks, int total)
     {
         subjects[subject] = make_pair(marks, total);
+        marksObtained += marks;
+        totalMarks += total;
     }
 
     // calculating total marks and percentage
-    void calculateTotalAndPercentage()
+    void calculatePercentage()
     {
-        marksObtained = 0;
-        totalMarks = 0;
-
-        for (const auto &subject : subjects)
-        {
-            marksObtained += subject.second.first;
-            totalMarks += subject.second.second;
-        }
 
         percent = (static_cast<double>(marksObtained) / totalMarks) * 100;
     }
@@ -61,7 +55,7 @@ public:
     // calculate total marks and percentage before displaying info
     void prepareInfo() const
     {
-        const_cast<student *>(this)->calculateTotalAndPercentage();
+        const_cast<student *>(this)->calculatePercentage();
     }
 };
 
