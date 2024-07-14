@@ -16,7 +16,7 @@ The Student Grade Tracker is a C++ program designed to manage and analyze grades
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/student-grade-tracker.git
+   git clone [https://github.com/your-username/student-grade-tracker.git](https://github.com/pratik-1732/student-grade-tracker.git)
    ```
 
 2. **Navigate to the Project Directory:**
@@ -39,49 +39,6 @@ The Student Grade Tracker is a C++ program designed to manage and analyze grades
    - Enter the number of students.
    - Input each student's name, ID, grades for assignments, and exams as prompted.
    - View the calculated class averages, statistical analysis, and top three students.
-
-## Example Output
-
-Here's an example of what the program output might look like:
-
-```plaintext
-Welcome to Student Grade Tracker!
-
-Enter number of students: 3
-
-Student 1:
-Name: John Doe
-ID: 101
-Enter grades for assignments (out of 100): 90 85 95 88
-Enter grades for exams (out of 100): 85 90
-
-Student 2:
-Name: Jane Smith
-ID: 102
-Enter grades for assignments (out of 100): 95 92 88 90
-Enter grades for exams (out of 100): 88 85
-
-Student 3:
-Name: Michael Johnson
-ID: 103
-Enter grades for assignments (out of 100): 85 88 92 90
-Enter grades for exams (out of 100): 90 92
-
-Class Average:
-- Assignments: 90.00
-- Exams: 88.00
-- Overall Grades: 88.33
-
-Statistical Analysis:
-- Minimum Overall Grade: 85.00
-- Maximum Overall Grade: 90.33
-- Average Overall Grade: 88.00
-
-Top Students:
-1. Jane Smith (ID: 102) - Overall Grade: 90.33
-2. Michael Johnson (ID: 103) - Overall Grade: 88.67
-3. John Doe (ID: 101) - Overall Grade: 87.00
-```
 
 ## Contribution
 
